@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loader{
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .loader .dot{
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    margin-left: 10px;
+  
+  }
+  
+@keyframes dotOne {
+    0%{
+      transform: translateX(0px);
+      background: #ff0101;
+    }50%{
+   transform: translateX(200px);
+    }100%{
+       transform: translateX(0px);
+    }
+  }
+  
+  @keyframes dotTwo {
+    0%{
+      transform: translateX(0px);
+      background: #8a0c0c;
+    }50%{
+   transform: translateX(160px);
+    }100%{
+       transform: translateX(0px);
+    }
+  }
+  
+  @keyframes dotThree {
+    0%{
+      background: #0f8d17;
+      transform: translateX(0px);
+    }50%{
+   transform: translateX(120px);
+    }100%{
+       transform: translateX(0px);
+    }
+  }
+  
+  @keyframes dotFour {
+    0%{
+      background: #05ff05;
+      transform: translateX(0px);
+    }50%{
+   transform: translateX(80px);
+    }100%{
+       transform: translateX(0px);
+    }
+  }
+  
+  @keyframes dotFive {
+    0%{
+      background: #000000;
+      transform: translateX(0px);
+    }50%{
+   transform: translateX(40px);
+    }100%{
+       transform: translateX(0px);
+    }
+  }
+  .dit1{
+  
+    animation: dotOne 2s ease infinite forwards;
+    
+  }
+  .dit2{
+  
+    animation: dotTwo 2s ease infinite forwards;
+  }
+  .dit3{
+    
+    animation: dotThree 2s ease infinite forwards;
+  }
+  .dit4{
+    
+    animation: dotFour 2s ease infinite forwards;
+  }
+  .dit5{
+  
+    animation: dotFive 2s ease infinite forwards;
+  }
+  
